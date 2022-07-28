@@ -1,0 +1,7 @@
+encryptionsalt: v1:Me+VT145s+8=:v1:TfObmiLGZ7zM4F7k:JrffQpyqyfUPI5N3l43Snhu+AFs93w==
+config:
+  aws-native:region: us-east-1
+  aws:region: us-east-1
+  iam-security-incident:emailAddress:
+    secure: v1:zKoe/gr03y/2WY4O:2ZcrMf07Xu68SNhzzVJMLisqqK5ysfFhw8IbEGc/uHqZO9CF1C0QdkA=
+  iam-security-incident:restrictedActions: s3:DeleteBucket,s3:DeleteObject

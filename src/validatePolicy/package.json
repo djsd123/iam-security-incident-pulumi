@@ -1,0 +1,10 @@
+{
+  "name": "validatePolicy",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "Mikael Allison",
+  "license": "MIT-0",
+  "dependencies": {
+    "aws-sdk": "^2.1181.0"
+  }
+}
