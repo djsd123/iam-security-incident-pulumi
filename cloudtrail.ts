@@ -13,7 +13,8 @@ const cloudtrailBucket = new s3.BucketV2('cloudtrail-bucket', {
 new s3.BucketAclV2('cloudtrail-bucket-acl', {
     bucket: cloudtrailBucket.id,
     acl: 'private'
-})
+}, { dependsOn: cloudtrailBucket })
+
 pulumi.all([cloudtrailBucket.arn, accountId]).apply(([cloudtrailBucketArn, accountId]) => {
     new s3.BucketPolicy('cloudtrail-bucket-policy', {
         bucket: cloudtrailBucket.id,
